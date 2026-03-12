@@ -1,4 +1,4 @@
 # Ignore documentation
 docs/**
-README.md
+*.md
 info.txt
