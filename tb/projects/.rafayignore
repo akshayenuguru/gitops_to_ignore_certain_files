@@ -1,4 +1,4 @@
 **/docs/**
 **/*.md
 README.Md
-**/*-agent.txt
+**/fake-agent*
