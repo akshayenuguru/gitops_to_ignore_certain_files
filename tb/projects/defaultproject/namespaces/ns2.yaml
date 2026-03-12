@@ -1,6 +1,6 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
-  name: ns1
+  name: ns2
   project: defaultproject
 spec: {}
