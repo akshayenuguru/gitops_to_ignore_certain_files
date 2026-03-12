@@ -1,4 +1,4 @@
 docs/**
 **/*.md
 README.Md
-**/examples/**
+**/fake-agent.txt
