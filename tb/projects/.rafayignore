@@ -1,5 +1,5 @@
 **/*.txt
 **/*.md
-**.Md
+README.Md
 
 fake.yaml
