@@ -1,5 +1,2 @@
-# Ignore documentation
-docs/**
-*.md
-info.txt
+
 **/examples/**
