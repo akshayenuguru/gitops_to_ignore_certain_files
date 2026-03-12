@@ -1,5 +1,4 @@
-**/*.txt
+**/docs/**
 **/*.md
 README.Md
 
-**/fake.yaml
