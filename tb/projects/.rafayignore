@@ -2,4 +2,4 @@
 **/*.md
 README.Md
 
-fake.yaml
+**/fake.yaml
