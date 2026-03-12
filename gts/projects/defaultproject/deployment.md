@@ -18,3 +18,11 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+
+
+
+
+
+
+
+        
