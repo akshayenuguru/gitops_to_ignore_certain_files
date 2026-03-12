@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-minimal
+  namespace: ns-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        # Alpine version is ~10x smaller than the standard image
+        image: nginx:alpine
+        resources:
+          limits:
+            cpu: "50m"      # 5% of a single CPU core
+            memory: "32Mi"  # NGINX usually idles around 2-10Mi
+          requests:
+            cpu: "10m"      # Minimum CPU reservation
+            memory: "16Mi"  # Minimal memory for startup
+        ports:
+        - containerPort: 80

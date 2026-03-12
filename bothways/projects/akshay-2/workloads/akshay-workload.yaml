@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: akshay-workload
+  project: akshay-2
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/akshay-workload/akshay-workload.yaml
+    type: Yaml
+  namespace: akshay-namespace
+  placement:
+    selector: rafay.dev/clusterName=akshay-mks-aws
+  version: akshay-workload-v2-202601191139090000

@@ -1,0 +1,15 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: test1
+  project: akshay-2
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/test1/test1.yaml
+    type: Yaml
+  namespace: akshay-namespace
+  placement:
+    selector: rafay.dev/clusterName=akshay-emt
+  version: test1-v1-202602170949580000

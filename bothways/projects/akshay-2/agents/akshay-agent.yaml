@@ -1,0 +1,11 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: akshay-agent
+  project: akshay-2
+spec:
+  active: true
+  cluster:
+    name: akshay-emt
+  type: Cluster
+  version: r4.0.0

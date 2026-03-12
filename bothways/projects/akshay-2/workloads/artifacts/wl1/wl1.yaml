@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-minimal
+  namespace: ns-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:alpine
+          resources:
+            limits:
+              cpu: "50m"
+              memory: "32Mi"
+            requests:
+              cpu: "10m"
+              memory: "16Mi"
+          ports:
+            - containerPort: 80

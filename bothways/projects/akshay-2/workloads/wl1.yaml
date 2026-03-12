@@ -1,0 +1,12 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: wl1
+  project: akshay-2
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/wl1/wl1.yaml
+    type: Yaml
+  namespace: akshay-namespace

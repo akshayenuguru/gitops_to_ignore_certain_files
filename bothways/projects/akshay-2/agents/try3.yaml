@@ -1,0 +1,9 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: try3
+  project: akshay-2
+spec:
+  active: true
+  type: Docker
+  version: r4.0.0

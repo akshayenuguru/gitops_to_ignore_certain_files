@@ -1,0 +1,13 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: a
+  project: akshay-2
+spec:
+  active: true
+  config:
+    concurrency: 10
+    environment:
+      numWorkers: 10
+  type: Docker
+  version: r4.0.1

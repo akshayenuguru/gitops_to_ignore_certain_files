@@ -1,0 +1,17 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: test-agent
+  project: akshay-2
+spec:
+  active: true
+  config:
+    concurrency: 55
+    docker:
+      limits:
+        cpu: 500m
+        memory: 1Gi
+    environment:
+      numWorkers: 22
+  type: Docker
+  version: r4.0.0
