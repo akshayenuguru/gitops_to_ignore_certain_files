@@ -4,6 +4,6 @@ metadata:
   name: fake
   project: defaultproject
 spec:
-  active: true
+  active: false
   type: Docker
   version: r4.0.1
