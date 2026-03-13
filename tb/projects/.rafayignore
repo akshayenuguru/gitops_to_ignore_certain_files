@@ -2,4 +2,4 @@ docs/**
 **/*.md
 README.Md
 **/fake-agent.txt
-deployment.yaml
+**/deployment.yaml
