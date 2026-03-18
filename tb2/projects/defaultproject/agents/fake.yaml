@@ -1,0 +1,8 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: fake
+  project: defaultproject
+spec:
+  type: Docker
+  version: r4.0.1
